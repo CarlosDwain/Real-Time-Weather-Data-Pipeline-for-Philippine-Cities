@@ -5,7 +5,7 @@ To design, implement, and demonstrate a complete data engineering pipeline that 
 
 ## Table of Contents
 
-- [Pipeline](#section1)
+- [Project highlights](#section1)
 
 <a name="section1"></a>
 ## Project highlights
@@ -16,6 +16,18 @@ To design, implement, and demonstrate a complete data engineering pipeline that 
    - Compare new location data with existing records for changes.
    - Perform geocoding to fetch latitude and longitude for cities.
    - Add real-time weather data for each location using a weather API.
-4. Data Storage
+3. Data Storage
+   - Upsert cleaned and enriched data into a database.
+   - Maintain historical and real-time weather data for analytics.
    
-## 
+## Technology Used
+- Python
+  - pandas: Data manipulation and cleaning.
+  - openpyxl: Handling Excel files.
+  - sqlalchemy: Database interaction.
+  - requests: API calls for data fetching.
+  - Database: Microsoft SQL Server.
+- APIs
+  - PSGC API: Fetch location data.
+  - Geocoding API: Retrieve latitude and longitude.
+  - Weather API: Fetch real-time weather data.
