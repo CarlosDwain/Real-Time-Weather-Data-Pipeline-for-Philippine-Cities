@@ -22,11 +22,11 @@ if API_KEY is None:
     raise ValueError("API_KEY is not set. Please set the API_KEY environment variable.")
 
 # Database connection parameters
-DB_DRIVER = 'ODBC+Driver+17+for+SQL+Server'  # Adjust driver version if needed
-DB_SERVER = 'CARLOSDWAIN\SQLEXPRESS'        # Replace with your server name
-DB_DATABASE = 'OpenWeather'                   # Replace with your database name
-DB_TRUSTED_CONNECTION = 'yes'                 # Use 'yes' for Windows Authentication
-DB_TRUST_SERVER_CERTIFICATE = 'yes'
+DB_DRIVER = os.getenv('DB_DRIVER')
+DB_SERVER = os.getenv('DB_SERVER')
+DB_DATABASE = os.getenv('DB_DATABASE')
+DB_TRUSTED_CONNECTION = os.getenv('DB_TRUSTED_CONNECTION')
+DB_TRUST_SERVER_CERTIFICATE = os.getenv('DB_TRUST_SERVER_CERTIFICATE')
 
 # Set the API endpoints
 PSGC_CITIES_URL = 'https://psgc.gitlab.io/api/cities.json'
