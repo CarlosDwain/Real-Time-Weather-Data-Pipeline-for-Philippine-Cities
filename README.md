@@ -12,7 +12,10 @@ To design, implement, and demonstrate a complete data engineering pipeline that 
 1. Data Extraction
    - Fetch cities and provinces from the Philippine Standard Geographic Code (PSGC) API.
    - Merge city data with province names for completeness.
-3. Data Processing
+2. Data Processing
+   - Compare new location data with existing records for changes.
+   - Perform geocoding to fetch latitude and longitude for cities.
+   - Add real-time weather data for each location using a weather API.
 4. Data Storage
    
 ## 
