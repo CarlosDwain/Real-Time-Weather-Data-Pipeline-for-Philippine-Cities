@@ -37,3 +37,6 @@ To design, implement, and demonstrate a complete data engineering pipeline that 
 
 
 ## Requirements
+- A virtual environment (recommended)
+- Python 3.x (I used 3.11.1)
+- Dependencies listed in `requirement_pyqt5.txt`
