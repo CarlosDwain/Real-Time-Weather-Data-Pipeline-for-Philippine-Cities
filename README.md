@@ -21,6 +21,8 @@ To design, implement, and demonstrate a complete data engineering pipeline that 
 3. Data Storage
    - Upsert cleaned and enriched data into a database.
    - Maintain historical and real-time weather data for analytics.
+4. Automation
+   - For periodic ingestion, I used task scheduler in Windows. 
 
 <a name="section2"></a>
 ## Technology Used
