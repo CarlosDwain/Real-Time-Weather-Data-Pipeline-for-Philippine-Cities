@@ -8,14 +8,18 @@ from datetime import datetime, timedelta
 import hashlib
 import os
 import numpy as np
-
-# Changes
+from dotenv import load_dotenv
 
 # Set up logging configuration
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# OpenWeatherMap API Key
-API_KEY = 'e1ab73f82915b93ab18119a8a583aed2'  # Replace with your actual API key
+# Load environment variables from .env file
+load_dotenv()
+
+# Fetch the API key
+API_KEY = os.getenv('API_KEY')
+if API_KEY is None:
+    raise ValueError("API_KEY is not set. Please set the API_KEY environment variable.")
 
 # Database connection parameters
 DB_DRIVER = 'ODBC+Driver+17+for+SQL+Server'  # Adjust driver version if needed
