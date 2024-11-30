@@ -9,6 +9,8 @@ import hashlib
 import os
 import numpy as np
 
+# Changes
+
 # Set up logging configuration
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
