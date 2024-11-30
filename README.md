@@ -6,6 +6,8 @@ To design, implement, and demonstrate a complete data engineering pipeline that 
 ## Table of Contents
 
 - [Project highlights](#section1)
+- [Technology Used](#section2)
+- [Requirements](#section3)
 
 <a name="section1"></a>
 ## Project highlights
@@ -19,7 +21,8 @@ To design, implement, and demonstrate a complete data engineering pipeline that 
 3. Data Storage
    - Upsert cleaned and enriched data into a database.
    - Maintain historical and real-time weather data for analytics.
-   
+
+<a name="section2"></a>
 ## Technology Used
 - Python
   - pandas: Data manipulation and cleaning.
@@ -31,3 +34,6 @@ To design, implement, and demonstrate a complete data engineering pipeline that 
   - PSGC API: Fetch location data.
   - Geocoding API: Retrieve latitude and longitude.
   - Weather API: Fetch real-time weather data.
+
+
+## Requirements
